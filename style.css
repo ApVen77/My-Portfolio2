@@ -47,6 +47,13 @@ input[type="checkbox"] {
     margin: 0 4px 8px 0;
 }
 
+.checkBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
 select {
     padding: 6px;
     height: 32px;

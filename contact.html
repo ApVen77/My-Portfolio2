@@ -9,7 +9,10 @@
 </head>
 
 <body>
-
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="contact.html">✍🏾 Contact Me</a>
+    </nav>
 
     <form name="my-form" id="myForm" action="#" method="get" autocomplete="on">
 
@@ -30,34 +33,54 @@
         </div>
 
         <div>
-            <h5>Years Required</h5>
+            <legend>Years Required</legend>
             <label for="age1">Under 5:</label>
             <input type="radio" id="age1" required>
             <label for="age2">Over 5:</label>
             <input type="radio" id="age2" required>
         </div>
 
-        <h2>My Profile</h2>
+        <legend>My Profile</legend>
         <textarea name="bio" id="Biography" cols="30" rows="10">Tell me about you</textarea>
 
 
-        <label for="cars">Choose a Language:</label>
+        <label for="languages">Choose a Frontend Language:</label>
         <select name="lang" id="lang" form="my-form">
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="js">JavaScript</option>
             <option value="sass">SASS</option>
+            <option value="boot">Bootstrap</option>
         </select>
 
+        <label for="languages">Choose a Backend Language:</label>
+        <select name="lang" id="lang" form="my-form">
+            <option value="node">Node</option>
+            <option value="angular">Angular</option>
+            <option value="react">React</option>
+            <option value="sql">SQL</option>
+            <option value="java">Java</option>
+        </select>
 
+        <legend>Interests</legend>
+        <div class="checkBox">
+            <input type="checkbox" id="opt1" name="vehicle1" value="learn">
+            <label for="opt1"> Learning</label>
 
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label>
+            <input type="checkbox" id="opt2" name="vehicle3" value="mentor">
+            <label for="opt2"> Mentoring</label>
+
+            <input type="checkbox" id="opt3" name="vehicle2" value="work">
+            <label for="opt3"> Working</label>
+
+            <input type="checkbox" id="opt4" name="vehicle2" value="brush">
+            <label for="opt4"> Brushing up</label>
+        </div>
+        <br><br>
+
+        <input type="submit" value="Submit">
     </form>
+    <script src="app.js"></script>
 </body>
 
 </html>
